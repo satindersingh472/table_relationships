@@ -31,7 +31,7 @@ CREATE TABLE `blog_post` (
   PRIMARY KEY (`id`),
   KEY `blog_post_FK` (`blogger_id`),
   CONSTRAINT `blog_post_FK` FOREIGN KEY (`blogger_id`) REFERENCES `blogger` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -44,7 +44,8 @@ INSERT INTO `blog_post` VALUES
 ('honesty is always the best option to choose','honesty is the best policy','2021-05-06',1,1),
 ('tiger is an extinct animal','extinct species','2022-01-03',2,3),
 ('climate changing is affecting us ','climate change','2021-05-08',1,4),
-('bigger cities have more traffic','increasing traffic','2022-01-06',2,5);
+('bigger cities have more traffic','increasing traffic','2022-01-06',2,5),
+('people are getting smarter','smarter people','2021-07-03',4,7);
 /*!40000 ALTER TABLE `blog_post` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -139,4 +140,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-09-14 20:54:37
+-- Dump completed on 2022-09-14 21:58:56
